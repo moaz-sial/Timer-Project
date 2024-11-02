@@ -8,7 +8,7 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 1
+WORK_MIN = 30
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
@@ -71,7 +71,7 @@ timer_label.config(fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50, 'bold'))
 timer_label.grid(column=1, row=0)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-img = Image.open('C:/Users/PC/Desktop/Python Projects/Tkinter/pomodoro-start/tomato.png')
+img = Image.open('C:/Users/PC/Desktop/Python Projects/Tkinter/Timer Project/tomato.png')
 img = ImageTk.PhotoImage(img)
 canvas.create_image(100, 112, image=img)
 timer_text = canvas.create_text(100, 130, text='00:00', fill='white', font=(FONT_NAME, 35, 'bold'))
